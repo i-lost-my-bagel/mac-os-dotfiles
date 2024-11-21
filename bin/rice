@@ -1,0 +1,12 @@
+#!/bin/bash
+
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+
+yabai --start-service
+skhd --start-service
+brew services start sketchybar
+
+#osascript -e 'tell application "System Events"' -e 'tell dock preferences' -e 'set properties to {autohide menu bar: true, autohide:true}' -e 'end tell' -e 'end tell'
+
+osascript ~/Documents/rice.scpt

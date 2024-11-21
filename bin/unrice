@@ -1,0 +1,14 @@
+#!/bin/bash
+
+yabai -m config window_shadow on
+
+defaults write com.apple.finder CreateDesktop true
+killall Finder
+
+yabai --stop-service
+skhd --stop-service
+brew services stop sketchybar
+pkill -9 borders
+
+osascript -e 'tell application "System Events"' -e 'tell dock preferences' -e 'set properties to {autohide menu bar: false, autohide:false}' -e 'end tell' -e 'end tell'
+
