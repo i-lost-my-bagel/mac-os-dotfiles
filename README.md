@@ -8,6 +8,7 @@ dotfiles for my macOS tiling WM setup
     - Requires System Integrity Protection partially disabled
 - [SketchyBar](https://github.com/FelixKratz/SketchyBar)
 - [JankyBorders](https://github.com/FelixKratz/JankyBorders)
+    - Does not officially support Ventura so force install it with the `--ignore-dependencies`
 - [diskspace](https://github.com/scriptingosx/diskspace)
     - Not in brew so download it manually
 - font-iosevka-nerd-font
@@ -24,3 +25,5 @@ Start all the services with the following commands
 - `brew services start sketchybar`
 
 Hope everything works on a computer that isn't my own
+
+## Notes
